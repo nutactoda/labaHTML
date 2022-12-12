@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+</head>
+<body text="#2A8D9C" bgcolor="#F8F8FF">
+<h1 align=center><b><big>Параметры способностей персонажей</big></b></h1>
+<h4 align=center><a href="main%20Naruto.html">Сильнейшие персонажи</a></h4>
+
+<details>
+    <summary>График</summary>
+    <form>
+        <table>
+            <tr>
+                <th>Значениe по оси OX</th>
+                <th>Результат</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="ox" value="0">"Энциклопедия"<br>
+                </td>
+                <td>
+                    <input type="checkbox" name="oy" value="0">Максимальная сумма<br>
+                    <input type="checkbox" name="oy" value="1">Минимальная сумма<br>
+                </td>
+            </tr>
+        </table>
+        <input type=button value="Построить">
+    </form>
+</details>
+<details>
+    <summary>Фильтр</summary>
+    <form>
+        <p>
+            <label for="nameOfCharacter">Имя:</label>
+            <input type=text name="nameOfCharacter">
+        </p>
+        <p>
+            <label for="category">Энциклопедия:</label>
+            <input type=text name="category">
+        </p>
+        <p>
+            <label for="sum">Сумма: </label>
+            от <input type=text name="sum"> до <input type=text name="sumto">
+        </p>
+        <input type=button value="Найти">
+    </form>
+</details>
+<details>
+    <summary>Сортировка</summary>
+    <form>
+        <p>
+            Первый уровень:
+            <select name="sortFirst">
+                <option value="0">Нет</option>
+                <option value="1">Ниндзюцу</option>
+                <option value="2">Тайдзюцу</option>
+                <option value="3">Гендзюцу</option>
+                <option value="4">Интеллект</option>
+                <option value="6">Сила</option>
+                <option value="5">Скорость</option>
+                <option value="6">Чакра</option>
+                <option value="5">Ручные Печати</option>
+                <option value="5">Сумма</option>
+
+            </select>
+            по убыванию? <input type="checkbox" name="descFirst">
+        </p>
+        <p>
+            Второй уровень:
+            <select name="sortSecond">
+                <option value="0">Нет</option>
+                <option value="1">Ниндзюцу</option>
+                <option value="2">Тайдзюцу</option>
+                <option value="3">Гендзюцу</option>
+                <option value="4">Интеллект</option>
+                <option value="6">Сила</option>
+                <option value="5">Скорость</option>
+                <option value="6">Чакра</option>
+                <option value="5">Ручные Печати</option>
+                <option value="5">Сумма</option>
+            </select>
+            по убыванию? <input type="checkbox" name="descSecond">
+        </p>
+        <p>
+            Третий уровень:
+            <select name="sortThird">
+                <option value="0">Нет</option>
+                <option value="1">Ниндзюцу</option>
+                <option value="2">Тайдзюцу</option>
+                <option value="3">Гендзюцу</option>
+                <option value="4">Интеллект</option>
+                <option value="6">Сила</option>
+                <option value="5">Скорость</option>
+                <option value="6">Чакра</option>
+                <option value="5">Ручные Печати</option>
+                <option value="5">Сумма</option>
+            </select>
+            по убыванию? <input type="checkbox" name="descThird">
+        </p>
+        <input type=button value="Сортировать">
+    </form>
+</details>
+<br>
+<table border="1" cellspacing="0" cellpadding="3">
+    <tr bgcolor="#cedff2">
+        <th>Имя
+        </th>
+        <th>Энциклопедия
+        </th>
+        <th>Ниндзюцу
+        </th>
+        <th>Тайдзюцу
+        </th>
+        <th>Гендзюцу
+        </th>
+        <th>Интеллект
+        </th>
+        <th>Сила
+        </th>
+        <th>Скорость
+        </th>
+        <th>Чакра
+        </th>
+        <th>Ручные Печати
+        </th>
+        <th>Сумма
+        </th>
+    </tr>
+    <tr>
+        <td>Наруто Узумаки</td>
+        <td>Ша но Шо</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>1.5</td>
+        <td>26.0</td>
+    </tr>
+    <tr>
+        <td>Саске Учиха</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>31.5</td>
+    </tr>
+    <tr>
+        <td>Асума Сарутоби</td>
+        <td>Ша но Шо</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>4.0</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>32.5</td>
+    </tr>
+    <tr>
+        <td>Джирайя</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>4.5</td>
+        <td>3.0</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>5.0</td>
+        <td>4.5</td>
+        <td>35.5</td>
+    </tr>
+    <tr>
+        <td>Киба Инузука</td>
+        <td>Ша но Шо</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>2.0</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>4.5</td>
+        <td>2.5</td>
+        <td>1.5</td>
+        <td>22.0</td>
+    </tr>
+    <tr>
+        <td>Майто Гай</td>
+        <td>Ша но Шо</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>2.5</td>
+        <td>32.5</td>
+    </tr>
+    <tr>
+        <td>Гаара</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>2.0</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>2.5</td>
+        <td>3.0</td>
+        <td>5.0</td>
+        <td>4.0</td>
+        <td>29.0</td>
+    </tr>
+    <tr>
+        <td>Рок Ли</td>
+        <td>Ша но Шо</td>
+        <td>0.5</td>
+        <td>5.0</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>1.0</td>
+        <td>22.0</td>
+    </tr>
+    <tr>
+        <td>Шикамару Нара</td>
+        <td>Ша но Шо</td>
+        <td>3.5</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>5.0</td>
+        <td>2.0</td>
+        <td>2.5</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>24.0</td>
+    </tr>
+    <tr>
+        <td>Темари</td>
+        <td>Ша но Шо</td>
+        <td>4.0</td>
+        <td>2.5</td>
+        <td>1.5</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>24.5</td>
+    </tr>
+    <tr>
+        <td>Канкуро</td>
+        <td>Ша но Шо</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>2.0</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>2.5</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>26.5</td>
+    </tr>
+    <tr>
+        <td>Орочимару</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>35.0</td>
+    </tr>
+    <tr>
+        <td>Ирука Умино</td>
+        <td>Ша но Шо</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>2.5</td>
+        <td>4.5</td>
+        <td>2.5</td>
+        <td>2.5</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>26.0</td>
+    </tr>
+    <tr>
+        <td>Какаши Хатаке</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>4.5</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>3.0</td>
+        <td>5.0</td>
+        <td>34.5</td>
+    </tr>
+    <tr>
+        <td>Эбису</td>
+        <td>Рин но Шо</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>2.0</td>
+        <td>4.5</td>
+        <td>25.0</td>
+    </tr>
+    <tr>
+        <td>Чоджи Акимичи</td>
+        <td>Ша но Шо</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>4.5</td>
+        <td>2.0</td>
+        <td>3.5</td>
+        <td>1.5</td>
+        <td>21.0</td>
+    </tr>
+    <tr>
+        <td>Анко Митараши</td>
+        <td>Рин но Шо</td>
+        <td>3.5</td>
+        <td>2.5</td>
+        <td>4.0</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>25.0</td>
+    </tr>
+    <tr>
+        <td>Ино Яманака</td>
+        <td>Ша но Шо</td>
+        <td>3.5</td>
+        <td>1.5</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>2.5</td>
+        <td>2.5</td>
+        <td>2.5</td>
+        <td>2.5</td>
+        <td>21.0</td>
+    </tr>
+    <tr>
+        <td>Дейдара</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>32.0</td>
+    </tr>
+    <tr>
+        <td>Момочи Забуза</td>
+        <td>Рин но Шо</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>2.5</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>30.5</td>
+    </tr>
+    <tr>
+        <td>Хината Хьюга</td>
+        <td>Ша но Шо</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>2.5</td>
+        <td>3.5</td>
+        <td>1.5</td>
+        <td>2.5</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>21.5</td>
+    </tr>
+    <tr>
+        <td>Сарутоби Хирузен</td>
+        <td>Тоо но Шо</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>5.0</td>
+        <td>34.0</td>
+    </tr>
+    <tr>
+        <td>Хаку</td>
+        <td>Рин но Шо</td>
+        <td>3.5</td>
+        <td>1.0</td>
+        <td>1.0</td>
+        <td>4.0</td>
+        <td>1.5</td>
+        <td>4.0</td>
+        <td>1.0</td>
+        <td>4.0</td>
+        <td>20.0</td>
+    </tr>
+    <tr>
+        <td>Баки</td>
+        <td>Рин но Шо</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>31.0</td>
+    </tr>
+    <tr>
+        <td>Сакура Харуно</td>
+        <td>Ша но Шо</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>2.5</td>
+        <td>4.0</td>
+        <td>26.0</td>
+    </tr>
+    <tr>
+        <td>Шино Абураме</td>
+        <td>Ша но Шо</td>
+        <td>4.0</td>
+        <td>1.5</td>
+        <td>2.0</td>
+        <td>4.0</td>
+        <td>1.5</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>22.5</td>
+    </tr>
+    <tr>
+        <td>Кабуто Якуши</td>
+        <td>Ша но Шо</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>5.0</td>
+        <td>32.5</td>
+    </tr>
+    <tr>
+        <td>Куренай Юхи</td>
+        <td>Ша но Шо</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>4.0</td>
+        <td>2.0</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>4.5</td>
+        <td>30.5</td>
+    </tr>
+    <tr>
+        <td>Неджи Хьюга</td>
+        <td>Ша но Шо</td>
+        <td>4.0</td>
+        <td>4.5</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>2.5</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>27.0</td>
+    </tr>
+    <tr>
+        <td>Хизаши Хьюга</td>
+        <td>Рин но Шо</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>4.5</td>
+        <td>5.0</td>
+        <td>29.5</td>
+    </tr>
+    <tr>
+        <td>Тентен</td>
+        <td>Ша но Шо</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>1.5</td>
+        <td>3.5</td>
+        <td>1.5</td>
+        <td>3.5</td>
+        <td>2.0</td>
+        <td>2.0</td>
+        <td>20.5</td>
+    </tr>
+    <tr>
+        <td>Заку Абуми</td>
+        <td>Рин но Шо</td>
+        <td>3.5</td>
+        <td>2.0</td>
+        <td>2.0</td>
+        <td>1.0</td>
+        <td>1.0</td>
+        <td>2.5</td>
+        <td>1.0</td>
+        <td>1.0</td>
+        <td>14.0</td>
+    </tr>
+    <tr>
+        <td>Досу Кинута</td>
+        <td>Рин но Шо</td>
+        <td>2.5</td>
+        <td>2.0</td>
+        <td>1.5</td>
+        <td>2.5</td>
+        <td>1.5</td>
+        <td>3.0</td>
+        <td>2.0</td>
+        <td>1.0</td>
+        <td>16.0</td>
+    </tr>
+    <tr>
+        <td>Хаяте Гекко</td>
+        <td>Рин но Шо</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>2.0</td>
+        <td>3.5</td>
+        <td>24.5</td>
+    </tr>
+    <tr>
+        <td>Ибики Морино</td>
+        <td>Рин но Шо</td>
+        <td>2.5</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>27.5</td>
+    </tr>
+    <tr>
+        <td>Хиаши Хьюга</td>
+        <td>Тоо но Шо</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>30.0</td>
+    </tr>
+    <tr>
+        <td>Итачи Учиха</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>4.5</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>2.5</td>
+        <td>5.0</td>
+        <td>35.5</td>
+    </tr>
+    <tr>
+        <td>Хидан</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>4.5</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>31.5</td>
+    </tr>
+    <tr>
+        <td>Какузу</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>4.5</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>32.5</td>
+    </tr>
+    <tr>
+        <td>Кисаме Хошигаки</td>
+        <td>Ша но Шо</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>2.5</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>32.5</td>
+    </tr>
+    <tr>
+        <td>Цунаде</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>35.0</td>
+    </tr>
+    <tr>
+        <td>Ямато</td>
+        <td>Ша но Шо</td>
+        <td>4.5</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>31.0</td>
+    </tr>
+    <tr>
+        <td>Чиё</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>2.0</td>
+        <td>4.5</td>
+        <td>32.0</td>
+    </tr>
+    <tr>
+        <td>Сай</td>
+        <td>Ша но Шо</td>
+        <td>4.0</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>27.5</td>
+    </tr>
+    <tr>
+        <td>Сасори</td>
+        <td>Ша но Шо</td>
+        <td>5.0</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>3.0</td>
+        <td>4.5</td>
+        <td>5.0</td>
+        <td>4.0</td>
+        <td>34.5</td>
+    </tr>
+    <tr>
+        <td>Кимимаро</td>
+        <td>Тоо но Шо</td>
+        <td>4.0</td>
+        <td>5.0</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>3.0</td>
+        <td>30.5</td>
+    </tr>
+    <tr>
+        <td>Рин</td>
+        <td>Тоо но Шо</td>
+        <td>3.5</td>
+        <td>1.5</td>
+        <td>2.5</td>
+        <td>4.0</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>2.5</td>
+        <td>4.0</td>
+        <td>21.0</td>
+    </tr>
+    <tr>
+        <td>Обито Учиха</td>
+        <td>Тоо но Шо</td>
+        <td>3.0</td>
+        <td>2.0</td>
+        <td>1.5</td>
+        <td>1.0</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>2.5</td>
+        <td>3.0</td>
+        <td>18.0</td>
+    </tr>
+    <tr>
+        <td>Генма Ширануи</td>
+        <td>Тоо но Шо</td>
+        <td>4.5</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>27.0</td>
+    </tr>
+    <tr>
+        <td>Дан Като</td>
+        <td>Тоо но Шо</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>3.5</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>31.5</td>
+    </tr>
+    <tr>
+        <td>Шизуне</td>
+        <td>Тоо но Шо</td>
+        <td>4.5</td>
+        <td>2.0</td>
+        <td>4.0</td>
+        <td>4.5</td>
+        <td>2.5</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>5.0</td>
+        <td>29.5</td>
+    </tr>
+    <tr>
+        <td>Джиробо</td>
+        <td>Тоо но Шо</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>1.0</td>
+        <td>2.5</td>
+        <td>5.0</td>
+        <td>2.0</td>
+        <td>4.0</td>
+        <td>2.0</td>
+        <td>23.5</td>
+    </tr>
+    <tr>
+        <td>Таюя</td>
+        <td>Тоо но Шо</td>
+        <td>3.0</td>
+        <td>2.0</td>
+        <td>5.0</td>
+        <td>3.5</td>
+        <td>1.0</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>24.5</td>
+    </tr>
+    <tr>
+        <td>Кидомару</td>
+        <td>Тоо но Шо</td>
+        <td>4.0</td>
+        <td>2.5</td>
+        <td>1.5</td>
+        <td>4.0</td>
+        <td>2.0</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>25.0</td>
+    </tr>
+    <tr>
+        <td>Укон</td>
+        <td>Тоо но Шо</td>
+        <td>5.0</td>
+        <td>3.0</td>
+        <td>1.5</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>3.0</td>
+        <td>2.0</td>
+        <td>4.0</td>
+        <td>25.0</td>
+    </tr>
+    <tr>
+        <td>Сакон</td>
+        <td>Тоо но Шо</td>
+        <td>5.0</td>
+        <td>4.0</td>
+        <td>1.5</td>
+        <td>2.5</td>
+        <td>3.5</td>
+        <td>3.0</td>
+        <td>4.0</td>
+        <td>4.0</td>
+        <td>27.5</td>
+    </tr>
+    <tr>
+        <td>Яшамару</td>
+        <td>Тоо но Шо</td>
+        <td>3.0</td>
+        <td>1.5</td>
+        <td>2.5</td>
+        <td>4.0</td>
+        <td>3.0</td>
+        <td>2.5</td>
+        <td>2.5</td>
+        <td>3.5</td>
+        <td>22.5</td>
+    </tr>
+</table>
+</body>
+</html>
